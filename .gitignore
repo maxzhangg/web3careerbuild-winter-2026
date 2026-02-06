@@ -4,7 +4,7 @@ my_hardhat_project/.env
 # Hardhat files
 my_hardhat_project/cache
 my_hardhat_project/artifacts
-my_hardhat_project/.states
+.states
 
 # TypeChain files
 my_hardhat_project/typechain
@@ -16,3 +16,6 @@ my_hardhat_project/coverage.json
 
 # Hardhat Ignition default folder for deployments against a local node
 my_hardhat_project/ignition/deployments/chain-31337
+
+.states
+artifacts
