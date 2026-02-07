@@ -1,0 +1,81 @@
+:root {
+  --bg: #09111f;
+  --panel: #111b2e;
+  --text: #eaf0ff;
+  --muted: #9fb0d3;
+  --accent: #57d3ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top left, #13335e 0%, var(--bg) 55%);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 680px;
+  background: color-mix(in srgb, var(--panel) 92%, black 8%);
+  border: 1px solid #2c446e;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 1.7rem;
+}
+
+p {
+  color: var(--muted);
+}
+
+button {
+  border: 0;
+  background: var(--accent);
+  color: #001726;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #355182;
+  background: #0e1930;
+  color: var(--text);
+}
+
+.status {
+  font-size: 0.9rem;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mono {
+  font-family: Consolas, "Courier New", monospace;
+}
