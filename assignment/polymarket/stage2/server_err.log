@@ -1,0 +1,25 @@
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 62020)
+Traceback (most recent call last):
+  File "D:\Python\Python314\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Python314\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Python314\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "D:\Python\Python314\Lib\http\server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\Python314\Lib\http\server.py", line 484, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "D:\VSCode\VSCodeProject\Web3CareerBuild\web3careerbuild-winter-2026\assignment\polymarket\stage2\src\api\server.py", line 75, in do_GET
+    event = fetch_event_by_slug(_conn(), parts[1])
+  File "D:\VSCode\VSCodeProject\Web3CareerBuild\web3careerbuild-winter-2026\assignment\polymarket\stage2\src\db\store.py", line 89, in fetch_event_by_slug
+    return conn.execute("SELECT * FROM events WHERE slug = ?", (slug,)).fetchone()
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3040 and this is thread id 27656.
+----------------------------------------

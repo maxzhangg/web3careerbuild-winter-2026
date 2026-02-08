@@ -1,0 +1,23 @@
+{
+  "stage2": {
+    "from_block": 81324595,
+    "to_block": 81324595,
+    "inserted_trades": 1,
+    "market_slug": "will-there-be-another-us-government-shutdown-by-january-31",
+    "market_id": 1,
+    "sample_trades": [
+      {
+        "tx_hash": "0x916cad96dd5c219997638133512fd17fe7c1ce72b830157e4fd5323cf4f19946",
+        "log_index": 1263,
+        "block_number": 81324595,
+        "timestamp": "2026-01-07T06:47:29",
+        "side": "BUY",
+        "outcome": "NO",
+        "price": "0.77",
+        "size": "13",
+        "token_id": "108988271800978168213949343685406694292284061166193819357568013088568150075789"
+      }
+    ],
+    "db_path": "./data/demo_indexer.db"
+  }
+}
